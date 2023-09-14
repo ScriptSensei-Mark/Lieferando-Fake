@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando Fake</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+
+    <link rel="stylesheet" href="fonts.css">
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+    <link rel="stylesheet" href="./Fonts/Helvetica-Font/Helvetica-Bold.ttf">
+    <link rel="stylesheet" href="./Fonts/Helvetica-Font/Helvetica-BoldOblique.ttf">
+    <link rel="stylesheet" href="./Fonts/Helvetica-Font/helvetica-compressed-5871d14b6903a.otf">
+    <link rel="stylesheet" href="./Fonts/Helvetica-Font/helvetica-light-587ebe5a59211.ttf">
+    <link rel="stylesheet" href="./Fonts/Helvetica-Font/Helvetica-Oblique.ttf">
+    <link rel="stylesheet" href="./Fonts/Helvetica-Font/helvetica-rounded-bold-5871d05ead8de.otf">
+    <link rel="stylesheet" href="./Fonts/Helvetica-Font/Helvetica.ttf">
+
+    <script src="dataHandler.js"></script>
+    <script src="script.js"></script>
+    <script src="templates.js"></script>
+</head>
+
+<body onload="init()">
+
+    <header>
+        <div class="top-wrapper">
+            <div onclick="refreshPage()" class="header-left">
+                <svg viewBox="0 0 16 16" width="1em" height="1em" role="presentation" focusable="false" aria-hidden="true">
+                    <path fill="#FF8000" d="M10.96 2.82L5.605 8l5.399 5.197-.875.963-5.565-5.364a1.164 1.164 0 010-1.671l5.495-5.25.901.945z"></path>
+                </svg>
+            </div>
+            <div class="header-center">
+                <span class="header-menu-text text-color">Speisekarte</span>
+            </div>
+            <div class="header-right">
+                <div class="desktop">
+                    <img src="./img/flag-of-germany.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/burger-menu-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <section class="main-content-wrapper">
+            <div id="restaurantInfo">
+            </div>
+            <div class="menu-wrapper-bg">
+                <div class="restaurant-menu-wrapper">
+                    <div id="restaurantMenu">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <aside id="desktopCartWrapper" class="shopping-cart-wrapper">
+            <div class="text-color">Warenkorb</div>
+            <div class="shopping-cart" id="shoppingCart"></div>
+            <div id="infoMinValue"></div>
+            <div id="sumContainer"></div>
+        </aside>
+
+        <div id="mobileCartWrapper" class="d-none text-color mobile-cart-wrapper">
+            <div class="mobile-cart-top">
+                <div>Warenkorb</div>
+                <svg onclick="closeMobileCart()" viewBox="0 0 16 16" width="1em" height="1em" role="presentation" focusable="false" aria-hidden="false">
+                    <path d="M11.868 3.205L8 7.072 4.133 3.205l-.928.927L7.073 8l-3.868 3.867.928.928L8 8.927l3.868 3.868.927-.928L8.928 8l3.867-3.868-.927-.927z"></path>
+                </svg>
+            </div>
+            <div class="mobile-cart" id="mobileCart"></div>
+            <div class="mobile-info-wrapper" id="mobileInfoMinValue"></div>
+            <div class="mobile-sum-container" id="mobileSumContainer"></div>
+        </div>
+
+        <div id="mobileBtnWrapper">
+        </div>
+
+        <div id="noInputPopup"></div>
+
+    </main>
+
+
+
+
+</body>
+
+</html>

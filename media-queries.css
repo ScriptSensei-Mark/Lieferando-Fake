@@ -1,0 +1,58 @@
+@media(max-width: 980px) {
+    .d-change {
+        display: block;
+    }
+    .desktop {
+        display: none !important;
+    }
+    .main-content-wrapper img {
+        height: 144px;
+    }
+    .shopping-cart-wrapper {
+        display: none;
+    }
+    .restaurant-menu-wrapper {
+        padding: 0 16px 100px;
+    }
+}
+
+@media(max-width: 720px) {
+    h1 {
+        font-size: 24px;
+    }
+    .dish-card h3 {
+        font-size: 16px;
+    }
+    .dish-card img {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 48px;
+        right: 16px;
+    }
+    .dish-card p {
+        max-width: 80%;
+    }
+    .dish-card span {
+        font-size: 16px;
+    }
+    .categories {
+        font-size: 20px
+    }
+    .restaurant-menu-wrapper {
+        padding: 0 8px 100px;
+    }
+    .empty-note-popup>div {
+        height: 15%;
+        padding: 16px;
+    }
+    .empty-note-popup h2 {
+        font-size: 1.9rem;
+    }
+}
+
+@media(min-width: 981px) {
+    #mobileCartWrapper {
+        display: none;
+    }
+}
