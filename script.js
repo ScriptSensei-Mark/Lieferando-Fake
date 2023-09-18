@@ -70,10 +70,10 @@ function countCartItems() {
 
 
 function addToCart(categoryIndex, dishIndex, dishCount) {
-    const dish = firstRestaurant.menu[menuCategories[categoryIndex]][dishIndex];
-    const dishName = dish.name;
-    const dishPrice = dish.price;
-    const index = cart.dishes.indexOf(dishName);
+    let dish = firstRestaurant.menu[menuCategories[categoryIndex]][dishIndex];
+    let dishName = dish.name;
+    let dishPrice = dish.price;
+    let index = cart.dishes.indexOf(dishName);
     if (index === -1) {
         cart.dishes.push(dishName);
         cart.prices.push(dishPrice);
@@ -206,8 +206,8 @@ function getScreenSize() {
 
 
 function checkIfMobile() {
-    const screen = window.innerWidth;
-    if (screen < 981) {
+    const screenSize = window.innerWidth;
+    if (screenSize < 981) {
         isMobile = true;
     } else {
         isMobile = false;
@@ -439,20 +439,6 @@ function loadCart() {
         mobileCartOpen = JSON.parse(mobileCartString);
     }
 };
-
-
-// function saveMobileCart() {
-//     let mobileCartString = JSON.stringify(mobileCartOpen);
-//     localStorage.setItem('mobileCartOpen', mobileCartString);
-// };
-
-
-// function loadMobileCart() {
-//     let mobileCartString = localStorage.getItem('mobileCartOpen');
-//     if (mobileCartString) {
-//         mobileCartOpen = JSON.parse(mobileCartString);
-//     }
-// };
 
 
 function forwardOrder() {};
